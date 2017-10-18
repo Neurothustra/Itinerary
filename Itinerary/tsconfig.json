@@ -6,7 +6,9 @@
     "sourceMap": true,
     "target": "es5",
     "module": "es6",
-    "outDir": "wwwroot/js"
+    "lib": [ "es2016", "dom" ],
+    "outDir": "wwwroot/js",
+    "forceConsistentCasingInFileNames": true
   },
   "exclude": [
     "node_modules",

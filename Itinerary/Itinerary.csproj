@@ -7,6 +7,8 @@
 
   <ItemGroup>
     <None Remove="Scripts\Itinerary.ts" />
+    <None Remove="Scripts\typings\jquery\jquery.d.ts" />
+    <None Remove="Scripts\typings\knockout\knockout.d.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,6 +21,8 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\Itinerary.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\knockout\knockout.d.ts" />
   </ItemGroup>
 
 </Project>
