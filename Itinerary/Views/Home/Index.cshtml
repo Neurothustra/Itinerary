@@ -146,7 +146,7 @@
                     <button class="btn btn-default" id="submitItinerary" data-bind="click: postItinerary">Submit</button>
                     <button id="printItinerary" class="btn btn-success" onclick="window.print()" disabled>Print your Itinerary</button>
                     <label class="text-danger" data-bind="text: outputMessage"></label>
-                    <span id="printAlert" style="display: none;">*Please note that the printout adds exptra pages. We are looking into the issue, but know that the itinerary is there on the fifth page. Thank you.</span>
+                    <span id="printAlert" style="display: none;">*Please note that the printout adds extra pages. We are looking into the issue, but know that the itinerary is there on the fifth page. Thank you.</span>
                 </div>
             </div>
         </div>
@@ -203,11 +203,3 @@
         });
     </script>
 }
-@*@section scripts{
-<script src="~/js/Itinerary.js"></script>
-    <script>
-        $(document).ready(function () {
-            var itinerary = new Itinerary();
-        });
-    </script>
-}*@
