@@ -23,43 +23,43 @@ class Itinerary {
 
     friRoleOptions: KnockoutObservableArray<string> = ko.observableArray([]);
     friSelectedRoleOption: KnockoutObservable<string> = ko.observable("");
-    friIntensiveOptions: KnockoutObservableArray<string> = ko.observableArray(["Select", "Icarian Enthusiasts Unite (Jon Rea & Kaija)", "Acro Montreal Bodyscapes flow (Jill Cambell)", "Sports Acro 201 (Brian Kincher)"]);
+    friIntensiveOptions: KnockoutObservableArray<string> = ko.observableArray(["Select", "Icarian", "Bodyscapes", "Sports"]);
     friSelectedIntesiveOption: KnockoutObservable<string> = ko.observable("");
 
     satSelectedRoleOption1: KnockoutObservable<string> = ko.observable("");
     satSelectedRoleOption2: KnockoutObservable<string> = ko.observable("");
     satSelectedRoleOption3: KnockoutObservable<string> = ko.observable("");
     satSelectedRoleOption4: KnockoutObservable<string> = ko.observable("");
-    satSection1Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "Standing Acro Mounts (Brian Kincher)", "Standing Poses (Micah & Monica)"]);
+    satSection1Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "Standing", "Poses"]);
     satSelectedSection1: KnockoutObservable<string> = ko.observable("");
-    satSection2Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "Yager to Bird - the Illusion Revealed (Flips)", "Dynamic Transitions (Andre & Serena)", "Z-press, z-press, z-press (Jill Campbell)"]);
+    satSection2Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "Yager", "Transitions", "Z-press"]);
     satSelectedSection2: KnockoutObservable<string> = ko.observable("");
-    satSection3Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "Spinning & Popping Machine! (Acro Superheroes)", "Junk in the trunk (Eleanor Bramwell)"]);
+    satSection3Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "Spinning", "Junk"]);
     satSelectedSection3: KnockoutObservable<string> = ko.observable("");
-    satSection4Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "Group style Cheeracro (Flips)", "All The Handstand Nation Machines (Reno & Sariah)", "Slackro the Basics (Rob Newman)"]);
+    satSection4Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "Cheeracro", "Handstand", "Slackro"]);
     satSelectedSection4: KnockoutObservable<string> = ko.observable("");
 
     sunSelectedRoleOption1: KnockoutObservable<string> = ko.observable("");
     sunSelectedRoleOption2: KnockoutObservable<string> = ko.observable("");
     sunSelectedRoleOption3: KnockoutObservable<string> = ko.observable("");
     sunSelectedRoleOption4: KnockoutObservable<string> = ko.observable("");
-    sunSection1Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "2 to 1 Handstand or Knot (Brian Kincher)", "Creative Counterbalances (Jill Campbell)"]);
+    sunSection1Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "Knot", "Counterbalances"]);
     sunSelectedSection1: KnockoutObservable<string> = ko.observable("");
-    sunSection2Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "Pop it Like it's Hot (Josh & Lizzy)", "Large Group Washing Machines (Shana & Company)"]);
+    sunSection2Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "Pop", "Machines"]);
     sunSelectedSection2: KnockoutObservable<string> = ko.observable("");
-    sunSection3Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "Toe Pitch FUNdamentals (Micha & Monica)", "Fancy Footwork (Ben & Joy)", "Whip It Up (Josh & Lizzy)"]);
+    sunSection3Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "Pitch", "Fancy", "Whip"]);
     sunSelectedSection3: KnockoutObservable<string> = ko.observable("");
-    sunSection4Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "Slackro the Flow (Rob Newman)", "Increasing structural integrity (Joy Carey)"]);
+    sunSection4Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "Flow", "Structural"]);
     sunSelectedSection4: KnockoutObservable<string> = ko.observable("");
 
     monSelectedRoleOption1: KnockoutObservable<string> = ko.observable("");
     monSelectedRoleOption2: KnockoutObservable<string> = ko.observable("");
     monSelectedRoleOption3: KnockoutObservable<string> = ko.observable("");
-    monSection1Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "Triotastic (Candace & Ryan)", "The Creative Process (Serena & Andre)"]);
+    monSection1Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "Triotastic", "Process"]);
     monSelectedSection1: KnockoutObservable<string> = ko.observable("");
-    monSection2Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "Free-Wheeling Hand2Hand (Ben & Joy)", "Handstands (Nathan Price)", "Whip + Pop (Micki & Jeremy)"]);
+    monSection2Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "Free-Wheeling", "Handstands", "Popup"]);
     monSelectedSection2: KnockoutObservable<string> = ko.observable("");
-    monSection3Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "Office hours (Brian Kincher)", "Oooh I think that I found myself some cheerleader(s) (Monica & Micah)", "Thai me up (Eric and Dion)"]);
+    monSection3Options: KnockoutObservableArray<string> = ko.observableArray(["Select", "Office", "Think", "Thai"]);
     monSelectedSection3: KnockoutObservable<string> = ko.observable("");
 
     constructor() {
@@ -136,7 +136,7 @@ class Itinerary {
 
         $.ajax({
             type: "POST",
-            url: "/api/Itineraries",
+            url: "/api/Itineraries",//TODO: build demo data store
             data: ko.toJSON(self.itineraryData),
             contentType: "application/json",
             success: function (data) {
@@ -147,7 +147,8 @@ class Itinerary {
                 $("#printAlert").removeAttr("style");
             },
             error: function (error) {
-                self.outputMessage("Your itineray was not submitted [" + error.status + error.statusText + ". Please Try again.");
+                //self.outputMessage("Your itineray was not submitted: " + error.status + error.statusText + ". Please Try again.");
+                self.outputMessage("Conection to API currently unavailable in this demo.");
             }
         });
     }
@@ -157,7 +158,7 @@ class Itinerary {
 
         $.ajax({
             type: "GET",
-            url: "/api/Itineraries",
+            url: "/api/Itineraries",//TODO: build demo data store
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function (data) {
@@ -165,7 +166,8 @@ class Itinerary {
                 self.itineraryList = data;
             },
             error: function (error) {
-                alert(error.status + "<--and--> " + error.statusText);
+                //alert("Error " + error.status + ": Connection " + error.statusText);
+                alert("Connection to API unavailable in this demo.");
             }
         });
     }

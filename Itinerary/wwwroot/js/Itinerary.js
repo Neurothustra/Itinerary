@@ -19,40 +19,40 @@ var Itinerary = (function () {
         this.attendeeEmail = ko.observable("");
         this.friRoleOptions = ko.observableArray([]);
         this.friSelectedRoleOption = ko.observable("");
-        this.friIntensiveOptions = ko.observableArray(["Select", "Icarian Enthusiasts Unite (Jon Rea & Kaija)", "Acro Montreal Bodyscapes flow (Jill Cambell)", "Sports Acro 201 (Brian Kincher)"]);
+        this.friIntensiveOptions = ko.observableArray(["Select", "Icarian", "Bodyscapes", "Sports"]);
         this.friSelectedIntesiveOption = ko.observable("");
         this.satSelectedRoleOption1 = ko.observable("");
         this.satSelectedRoleOption2 = ko.observable("");
         this.satSelectedRoleOption3 = ko.observable("");
         this.satSelectedRoleOption4 = ko.observable("");
-        this.satSection1Options = ko.observableArray(["Select", "Standing Acro Mounts (Brian Kincher)", "Standing Poses (Micah & Monica)"]);
+        this.satSection1Options = ko.observableArray(["Select", "Standing", "Poses"]);
         this.satSelectedSection1 = ko.observable("");
-        this.satSection2Options = ko.observableArray(["Select", "Yager to Bird - the Illusion Revealed (Flips)", "Dynamic Transitions (Andre & Serena)", "Z-press, z-press, z-press (Jill Campbell)"]);
+        this.satSection2Options = ko.observableArray(["Select", "Yager", "Transitions", "Z-press"]);
         this.satSelectedSection2 = ko.observable("");
-        this.satSection3Options = ko.observableArray(["Select", "Spinning & Popping Machine! (Acro Superheroes)", "Junk in the trunk (Eleanor Bramwell)"]);
+        this.satSection3Options = ko.observableArray(["Select", "Spinning", "Junk"]);
         this.satSelectedSection3 = ko.observable("");
-        this.satSection4Options = ko.observableArray(["Select", "Group style Cheeracro (Flips)", "All The Handstand Nation Machines (Reno & Sariah)", "Slackro the Basics (Rob Newman)"]);
+        this.satSection4Options = ko.observableArray(["Select", "Cheeracro", "Handstand", "Slackro"]);
         this.satSelectedSection4 = ko.observable("");
         this.sunSelectedRoleOption1 = ko.observable("");
         this.sunSelectedRoleOption2 = ko.observable("");
         this.sunSelectedRoleOption3 = ko.observable("");
         this.sunSelectedRoleOption4 = ko.observable("");
-        this.sunSection1Options = ko.observableArray(["Select", "2 to 1 Handstand or Knot (Brian Kincher)", "Creative Counterbalances (Jill Campbell)"]);
+        this.sunSection1Options = ko.observableArray(["Select", "Knot", "Counterbalances"]);
         this.sunSelectedSection1 = ko.observable("");
-        this.sunSection2Options = ko.observableArray(["Select", "Pop it Like it's Hot (Josh & Lizzy)", "Large Group Washing Machines (Shana & Company)"]);
+        this.sunSection2Options = ko.observableArray(["Select", "Pop", "Machines"]);
         this.sunSelectedSection2 = ko.observable("");
-        this.sunSection3Options = ko.observableArray(["Select", "Toe Pitch FUNdamentals (Micha & Monica)", "Fancy Footwork (Ben & Joy)", "Whip It Up (Josh & Lizzy)"]);
+        this.sunSection3Options = ko.observableArray(["Select", "Pitch", "Fancy", "Whip"]);
         this.sunSelectedSection3 = ko.observable("");
-        this.sunSection4Options = ko.observableArray(["Select", "Slackro the Flow (Rob Newman)", "Increasing structural integrity (Joy Carey)"]);
+        this.sunSection4Options = ko.observableArray(["Select", "Flow", "Structural"]);
         this.sunSelectedSection4 = ko.observable("");
         this.monSelectedRoleOption1 = ko.observable("");
         this.monSelectedRoleOption2 = ko.observable("");
         this.monSelectedRoleOption3 = ko.observable("");
-        this.monSection1Options = ko.observableArray(["Select", "Triotastic (Candace & Ryan)", "The Creative Process (Serena & Andre)"]);
+        this.monSection1Options = ko.observableArray(["Select", "Triotastic", "Process"]);
         this.monSelectedSection1 = ko.observable("");
-        this.monSection2Options = ko.observableArray(["Select", "Free-Wheeling Hand2Hand (Ben & Joy)", "Handstands (Nathan Price)", "Whip + Pop (Micki & Jeremy)"]);
+        this.monSection2Options = ko.observableArray(["Select", "Free-Wheeling", "Handstands", "Popup"]);
         this.monSelectedSection2 = ko.observable("");
-        this.monSection3Options = ko.observableArray(["Select", "Office hours (Brian Kincher)", "Oooh I think that I found myself some cheerleader(s) (Monica & Micah)", "Thai me up (Eric and Dion)"]);
+        this.monSection3Options = ko.observableArray(["Select", "Office", "Think", "Thai"]);
         this.monSelectedSection3 = ko.observable("");
         this.itineraryData = {
             attendeeName: this.attendeeName,
@@ -126,7 +126,7 @@ var Itinerary = (function () {
                 $("#printAlert").removeAttr("style");
             },
             error: function (error) {
-                self.outputMessage("Your itineray was not submitted [" + error.status + error.statusText + ". Please Try again.");
+                self.outputMessage("Conection to API currently unavailable in this demo.");
             }
         });
     };
@@ -141,7 +141,7 @@ var Itinerary = (function () {
                 self.itineraryList = data;
             },
             error: function (error) {
-                alert(error.status + "<--and--> " + error.statusText);
+                alert("Connection to API unavailable in this demo.");
             }
         });
     };
