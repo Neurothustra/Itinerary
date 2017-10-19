@@ -76,7 +76,7 @@
             </div>
             <div class="panel-body">
                 <table class="table">
-                    <thead>Philly Phlight 2017</thead>
+                    <thead>Philly itinerary 2017</thead>
                     <tbody>
                         <tr>
                             <td><strong>Friday</strong></td>
@@ -155,51 +155,51 @@
 
 @section scripts{
     <script>
-        var phlight = new Phlight2017.Itinerary();
-        phlight.buildItineraryForm("sat", 4, ".generateSaturday");
-        phlight.buildItineraryForm("sun", 4, ".generateSunday");
-        phlight.buildItineraryForm("mon", 3, ".generateMonday");
-        ko.applyBindings(phlight);
+        var itinerary = new Itinerary();
+        itinerary.buildItineraryForm("sat", 4, ".generateSaturday");
+        itinerary.buildItineraryForm("sun", 4, ".generateSunday");
+        itinerary.buildItineraryForm("mon", 3, ".generateMonday");
+        ko.applyBindings(itinerary);
 
         $("#friIntensive").change(function () {
-            phlight.friRole();
+            itinerary.friRole();
         });
         $("#sat1session").change(function () {
-            phlight.sat1role();
+            itinerary.sat1role();
         });
         $("#sat2session").change(function () {
-            phlight.sat2role();
+            itinerary.sat2role();
         });
         $("#sat3session").change(function () {
-            phlight.sat3role();
+            itinerary.sat3role();
         });
         $("#sat4session").change(function () {
-            phlight.sat4role();
+            itinerary.sat4role();
         });
         $("#sun1session").change(function () {
-            phlight.sun1role();
+            itinerary.sun1role();
         });
         $("#sun2session").change(function () {
-            phlight.sun2role();
+            itinerary.sun2role();
         });
         $("#sun3session").change(function () {
-            phlight.sun3role();
+            itinerary.sun3role();
         });
         $("#sun4session").change(function () {
-            phlight.sun4role();
+            itinerary.sun4role();
         });
         $("#mon1session").change(function () {
-            phlight.mon1role();
+            itinerary.mon1role();
         });
         $("#mon2session").change(function () {
-            phlight.mon2role();
+            itinerary.mon2role();
         });
         $("#mon3session").change(function () {
-            phlight.mon3role();
+            itinerary.mon3role();
         });
 
         $(document).ready(function () {
-            phlight.setItinerary();
+            itinerary.setItinerary();
         });
     </script>
 }
