@@ -172,15 +172,15 @@ class Itinerary {
         });
     }
 
-    //*role are all called from the view
+    //*roles are all called from the view
     friRole() {
         let self = this;
 
         self.roleOption = "friSelectedRoleOption";
         self.SessionOption = "friSelectedIntesiveOption";
-        self.classOption1 = "Icarian Enthusiasts Unite (Jon Rea & Kaija)";
-        self.classOption2 = "Acro Montreal Bodyscapes flow (Jill Cambell)";
-        self.classOption3 = "Sports Acro 201 (Brian Kincher)";
+        self.classOption1 = "Icarian";
+        self.classOption2 = "Bodyscapes";
+        self.classOption3 = "Sports";
         self.roleSelectId = "#friRoleType";
 
         self.roleAvailability();
@@ -191,9 +191,9 @@ class Itinerary {
 
         self.roleOption = "satSelectedRoleOption1";
         self.SessionOption = "satSelectedSection1";
-        self.classOption1 = "Standing Acro Mounts (Brian Kincher)";
-        self.classOption2 = "Standing Poses (Jill Campbell)";
-        self.classOption3 = "Stupid f**king fun washing machines (Sariah and Reno)";
+        self.classOption1 = "Standing";
+        self.classOption2 = "Poses";
+        self.classOption3 = "Washing";
         self.roleSelectId = "#sat1roleType";
 
         self.roleAvailability();
@@ -204,9 +204,9 @@ class Itinerary {
 
         self.roleOption = "satSelectedRoleOption2";
         self.SessionOption = "satSelectedSection2";
-        self.classOption1 = "Yager to Bird - the Illusion Revealed (Flips)";
-        self.classOption2 = "Dynamic Transitions (Andre & Serena)";
-        self.classOption3 = "Z-press, z-press, z-press (Jill Campbell)";
+        self.classOption1 = "Yager";
+        self.classOption2 = "Transitions";
+        self.classOption3 = "Z-press";
         self.roleSelectId = "#sat2roleType";
 
         self.roleAvailability();
@@ -217,9 +217,9 @@ class Itinerary {
 
         self.roleOption = "satSelectedRoleOption3";
         self.SessionOption = "satSelectedSection3";
-        self.classOption1 = "Pop Machine (Jon & Kaia)";
-        self.classOption2 = "Spinning & Popping Machine! (Acro Superheroes)";
-        self.classOption3 = "Junk in the trunk (Eleanor Bramwell)";
+        self.classOption1 = "Machine";
+        self.classOption2 = "Spinning";
+        self.classOption3 = "Junk";
         self.roleSelectId = "#sat3roleType";
 
         self.roleAvailability();
@@ -230,9 +230,9 @@ class Itinerary {
 
         self.roleOption = "satSelectedRoleOption4";
         self.SessionOption = "satSelectedSection4";
-        self.classOption1 = "Group style Cheeracro (Flips)";
-        self.classOption2 = "All The Handstand Nation Machines (Reno & Sariah)";
-        self.classOption3 = "Slackro the Basics (Rob Newman)";
+        self.classOption1 = "Cheeracro";
+        self.classOption2 = "Handstand";
+        self.classOption3 = "Slackro";
         self.roleSelectId = "#sat4roleType";
 
         self.roleAvailability();
@@ -243,9 +243,9 @@ class Itinerary {
 
         self.roleOption = "sunSelectedRoleOption1";
         self.SessionOption = "sunSelectedSection1";
-        self.classOption1 = "2 to 1 Handstand or Knot (Brian Kincher)";
-        self.classOption2 = "Creative Counterbalances (Jill Campbell)";
-        self.classOption3 = "Hand To Hand (Acro Superheroes)";
+        self.classOption1 = "Knot";
+        self.classOption2 = "Counterbalances";
+        self.classOption3 = "Hand";
         self.roleSelectId = "#sun4roleType";
 
         self.roleAvailability();
@@ -256,9 +256,9 @@ class Itinerary {
 
         self.roleOption = "sunSelectedRoleOption2";
         self.SessionOption = "sunSelectedSection2";
-        self.classOption1 = "Icarian Games (Jon & Kaija)";
-        self.classOption2 = "Pop it Like it's Hot (Josh & Lizzy)";
-        self.classOption3 = "Large Group Washing Machines (Shana & Company)";
+        self.classOption1 = "Icarian";
+        self.classOption2 = "Pop";
+        self.classOption3 = "Machines";
         self.roleSelectId = "#sun2roleType";
 
         self.roleAvailability();
@@ -269,9 +269,9 @@ class Itinerary {
 
         self.roleOption = "sunSelectedRoleOption3";
         self.SessionOption = "sunSelectedSection3";
-        self.classOption1 = "Toe Pitch FUNdamentals (Micha & Monica)";
-        self.classOption2 = "Fancy Footwork (Ben & Joy)";
-        self.classOption3 = "Whip It Up (Josh & Lizzy)";
+        self.classOption1 = "Pitch";
+        self.classOption2 = "Fancy";
+        self.classOption3 = "Whip";
         self.roleSelectId = "#sun3roleType";
 
         self.roleAvailability();
@@ -282,9 +282,9 @@ class Itinerary {
 
         self.roleOption = "sunSelectedRoleOption4";
         self.SessionOption = "sunSelectedSection4";
-        self.classOption1 = "Inlocate (Nathan Price)";
-        self.classOption2 = "Slackro the Flow (Rob Newman)";
-        self.classOption3 = "Increasing structural integrity (Joy Carey)";
+        self.classOption1 = "Inlocate";
+        self.classOption2 = "Flow";
+        self.classOption3 = "Structural";
         self.roleSelectId = "#sun4roleType";
 
         self.roleAvailability();
@@ -295,9 +295,9 @@ class Itinerary {
 
         self.roleOption = "monSelectedRoleOption1";
         self.SessionOption = "monSelectedSection1";
-        self.classOption1 = "Jump To Hand to Hand (Nathan Price)";
-        self.classOption2 = "Triotastic (Candace & Ryan)";
-        self.classOption3 = "The Creative Process (Serena & Andre)";
+        self.classOption1 = "Jump";
+        self.classOption2 = "Triotastic";
+        self.classOption3 = "Process";
         self.roleSelectId = "#mon1roleType";
 
         self.roleAvailability();
@@ -308,9 +308,9 @@ class Itinerary {
 
         self.roleOption = "monSelectedRoleOption2";
         self.SessionOption = "monSelectedSection2";
-        self.classOption1 = "Free-Wheeling Hand2Hand (Ben & Joy)";
-        self.classOption2 = "Handstands (Nathan Price)";
-        self.classOption3 = "Whip + Pop (Micki & Jeremy)";
+        self.classOption1 = "Free-Wheeling";
+        self.classOption2 = "Handstands";
+        self.classOption3 = "Popup";
         self.roleSelectId = "#mon2roleType";
 
         self.roleAvailability();
@@ -321,9 +321,9 @@ class Itinerary {
 
         self.roleOption = "monSelectedRoleOption3";
         self.SessionOption = "monSelectedSection3";
-        self.classOption1 = "Office hours (Brian Kincher)";
-        self.classOption2 = "Oooh I think that I found myself some cheerleader(s) (Monica & Micah)";
-        self.classOption3 = "Thai me up (Eric and Dion)";
+        self.classOption1 = "Office";
+        self.classOption2 = "Think";
+        self.classOption3 = "Thai";
         self.roleSelectId = "#mon3roleType";
 
         self.roleAvailability();
